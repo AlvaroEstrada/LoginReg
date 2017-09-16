@@ -32,20 +32,21 @@ public class ResumeActivity extends AppCompatActivity implements View.OnClickLis
 
         if(datos != null) {
 
-            nombre = datos.getString("et_name");
-            apeUno = datos.getString("et_last1");
-            apeDos = datos.getString("et_last2");
+            nombre = datos.getString("nombre");
+            apeUno = datos.getString("apeUno");
+            apeDos = datos.getString("apeDos");
             direcc = datos.getString("et_address");
             ciudad = datos.getString("et_city");
             cpostal = datos.getString("et_cp");
 
-            tv_name.setText(nombre);
-            tv_last1.setText(apeUno);
-            tv_last2.setText(apeDos);
-            tv_address.setText(direcc);
-            tv_city.setText(ciudad);
-            tv_cp.setText(cpostal);
         }
+
+        tv_name.setText(nombre);
+        tv_last1.setText(apeUno);
+        tv_last2.setText(apeDos);
+        tv_address.setText(direcc);
+        tv_city.setText(ciudad);
+        tv_cp.setText(cpostal);
 
     }
 

@@ -39,18 +39,15 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     public void getDatos(){
-
         direcc = et_address.getText().toString();
         ciudad = et_city.getText().toString();
         cpostal = et_cp.getText().toString();
-
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnBack:
-                finish();
                 break;
 
             case R.id.btnNext:
@@ -63,9 +60,9 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
     private void enviarDatos() {
 
         Intent intent = new Intent(this, ResumeActivity.class);
-        intent.putExtra("et_name", nombre);
-        intent.putExtra("et_last1", apeUno);
-        intent.putExtra("et_last2", apeDos);
+        intent.putExtra("nombre", nombre);
+        intent.putExtra("apeUno", apeUno);
+        intent.putExtra("apeDos", apeDos);
         intent.putExtra("et_address", direcc);
         intent.putExtra("et_city", ciudad);
         intent.putExtra("et_cp", cpostal);

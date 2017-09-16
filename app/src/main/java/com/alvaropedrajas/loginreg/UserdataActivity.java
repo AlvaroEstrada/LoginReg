@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class UserdataActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText et_name, et_last1, et_last2;
-    String nombre, apeUno, apeDos;
+    static String nombre, apeUno, apeDos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +25,26 @@ public class UserdataActivity extends AppCompatActivity implements View.OnClickL
         et_last1 = (EditText) this.findViewById(R.id.et_last1);
         et_last2 = (EditText) this.findViewById(R.id.et_last2);
 
+    }
+
+
+    public static String getNombre() {
+        return nombre;
+    }
+
+    public static String getApeUno() {
+        return apeUno;
+    }
+
+    public static String getApeDos() {
+        return apeDos;
+    }
+
+    public void getDatos(){
+
         nombre = et_name.getText().toString();
         apeUno = et_last1.getText().toString();
         apeDos = et_last2.getText().toString();
-
 
     }
 
@@ -49,6 +65,7 @@ public class UserdataActivity extends AppCompatActivity implements View.OnClickL
                 break;
 
             case R.id.btnNext:
+                getDatos();
                 enviarDatos();
                 break;
         }
