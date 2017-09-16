@@ -100,8 +100,8 @@
             android:layout_height="match_parent" >
 
             <LinearLayout
-                android:layout_width="100sp"
-                android:layout_height="match_parent"
+                android:layout_width="125sp"
+                android:layout_height="40sp"
                 android:orientation="vertical">
 
                 <TextView
@@ -110,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:text="Nombre: "
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
@@ -122,9 +122,9 @@
                 <TextView
                     android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40sp"
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
         </TableRow>
@@ -134,8 +134,8 @@
             android:layout_height="match_parent" >
 
             <LinearLayout
-                android:layout_width="100sp"
-                android:layout_height="match_parent"
+                android:layout_width="125sp"
+                android:layout_height="40sp"
                 android:orientation="vertical">
 
                 <TextView
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:text="1º Apellido: "
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
@@ -156,9 +156,9 @@
                 <TextView
                     android:id="@+id/tv_last1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40sp"
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
         </TableRow>
@@ -168,8 +168,8 @@
             android:layout_height="match_parent" >
 
             <LinearLayout
-                android:layout_width="100sp"
-                android:layout_height="match_parent"
+                android:layout_width="125sp"
+                android:layout_height="40sp"
                 android:orientation="vertical">
 
                 <TextView
@@ -178,7 +178,7 @@
                     android:layout_height="wrap_content"
                     android:text="2º Apellido: "
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
@@ -190,9 +190,9 @@
                 <TextView
                     android:id="@+id/tv_last2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40sp"
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
         </TableRow>
@@ -202,8 +202,8 @@
             android:layout_height="match_parent" >
 
             <LinearLayout
-                android:layout_width="100sp"
-                android:layout_height="match_parent"
+                android:layout_width="125sp"
+                android:layout_height="40sp"
                 android:orientation="vertical">
 
                 <TextView
@@ -212,7 +212,7 @@
                     android:layout_height="wrap_content"
                     android:text="Dirección: "
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
@@ -224,9 +224,9 @@
                 <TextView
                     android:id="@+id/tv_address"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40sp"
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
         </TableRow>
@@ -236,8 +236,8 @@
             android:layout_height="match_parent" >
 
             <LinearLayout
-                android:layout_width="100sp"
-                android:layout_height="match_parent"
+                android:layout_width="125sp"
+                android:layout_height="40sp"
                 android:orientation="vertical">
 
                 <TextView
@@ -246,7 +246,7 @@
                     android:layout_height="wrap_content"
                     android:text="Ciudad: "
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
@@ -258,9 +258,9 @@
                 <TextView
                     android:id="@+id/tv_city"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40sp"
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
         </TableRow>
@@ -270,8 +270,8 @@
             android:layout_height="match_parent" >
 
             <LinearLayout
-                android:layout_width="100sp"
-                android:layout_height="match_parent"
+                android:layout_width="125sp"
+                android:layout_height="40sp"
                 android:orientation="vertical">
 
                 <TextView
@@ -280,7 +280,7 @@
                     android:layout_height="wrap_content"
                     android:text="C. Postal: "
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
@@ -292,9 +292,9 @@
                 <TextView
                     android:id="@+id/tv_cp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40sp"
                     android:textAlignment="viewEnd"
-                    android:textSize="15sp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
         </TableRow>

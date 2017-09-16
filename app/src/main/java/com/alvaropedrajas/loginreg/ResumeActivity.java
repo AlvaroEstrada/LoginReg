@@ -31,14 +31,12 @@ public class ResumeActivity extends AppCompatActivity implements View.OnClickLis
         Bundle datos = this.getIntent().getExtras();
 
         if(datos != null) {
-
             nombre = datos.getString("nombre");
             apeUno = datos.getString("apeUno");
             apeDos = datos.getString("apeDos");
             direcc = datos.getString("et_address");
             ciudad = datos.getString("et_city");
             cpostal = datos.getString("et_cp");
-
         }
 
         tv_name.setText(nombre);
