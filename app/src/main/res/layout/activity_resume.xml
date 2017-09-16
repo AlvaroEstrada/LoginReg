@@ -7,27 +7,49 @@
     tools:context="com.alvaropedrajas.loginreg.ResumeActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="0sp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8sp"
-        android:layout_marginEnd="8sp"
         android:layout_marginLeft="8sp"
         android:layout_marginRight="8sp"
-        android:layout_marginStart="8sp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:id="@+id/linearLayout2">
+
+        <Space
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
         <Button
-            android:id="@+id/btnEnd"
+            android:id="@+id/btnBack"
             style="@android:style/Widget.Material.Button.Borderless.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Cerrar y confirmar" />
+            android:text="Editar" />
 
+        <Space
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@android:style/Widget.Material.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Confirmar" />
+
+        <Space
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
     </LinearLayout>
 
     <LinearLayout
