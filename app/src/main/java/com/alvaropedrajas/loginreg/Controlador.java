@@ -53,10 +53,6 @@ public class Controlador implements View.OnClickListener{
 
         login(v);
 
-        if(MainActivity.this){
-
-        }
-
         if (loginFlag){
             Intent intent = new Intent(activity, UserdataActivity.class);
             activity.startActivityForResult(intent, 0);
