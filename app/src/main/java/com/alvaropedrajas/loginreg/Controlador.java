@@ -14,9 +14,8 @@ public class Controlador implements View.OnClickListener{
 
     final String usuario = "usuario";
     final String password = "prueba";
-    EditText etUser, etPass;
+
     boolean loginFlag;
-    String getUsuario, getPassword;
 
     private Activity activity;
 
@@ -29,11 +28,11 @@ public class Controlador implements View.OnClickListener{
     }
 
     public void login(View v) {
-        etUser = (EditText) activity.findViewById(R.id.etUser);
-        etPass = (EditText) activity.findViewById(R.id.etPass);
+        EditText etUser = (EditText) activity.findViewById(R.id.etUser);
+        EditText etPass = (EditText) activity.findViewById(R.id.etPass);
 
-        getUsuario = etUser.getText().toString();
-        getPassword = etPass.getText().toString();
+        String getUsuario = etUser.getText().toString();
+        String getPassword = etPass.getText().toString();
 
         String empty = "";
 

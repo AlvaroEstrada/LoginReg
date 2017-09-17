@@ -24,19 +24,15 @@ public class UserdataActivity extends AppCompatActivity implements View.OnClickL
         et_name = (EditText) this.findViewById(R.id.et_name);
         et_last1 = (EditText) this.findViewById(R.id.et_last1);
         et_last2 = (EditText) this.findViewById(R.id.et_last2);
-
     }
 
     public void getDatos(){
-
         nombre = et_name.getText().toString();
         apeUno = et_last1.getText().toString();
         apeDos = et_last2.getText().toString();
-
     }
 
     public void enviarDatos(){
-
         Intent intent = new Intent(this, AddressActivity.class);
         intent.putExtra("et_name", nombre);
         intent.putExtra("et_last1", apeUno);

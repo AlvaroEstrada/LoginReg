@@ -25,10 +25,12 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
         et_city = (EditText) this.findViewById(R.id.et_city);
         et_cp = (EditText) this.findViewById(R.id.et_cp);
 
-
         btnBack.setOnClickListener(this);
         btnNext.setOnClickListener(this);
 
+    }
+
+    public void getDatos(){
         Bundle datos = this.getIntent().getExtras();
 
         if(datos != null) {
@@ -36,9 +38,7 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
             apeUno = datos.getString("et_last1");
             apeDos = datos.getString("et_last2");
         }
-    }
 
-    public void getDatos(){
         direcc = et_address.getText().toString();
         ciudad = et_city.getText().toString();
         cpostal = et_cp.getText().toString();
@@ -48,6 +48,8 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnBack:
+                Intent intent = new Intent(this, UserdataActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.btnNext:
@@ -58,7 +60,6 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     private void enviarDatos() {
-
         Intent intent = new Intent(this, ResumeActivity.class);
         intent.putExtra("nombre", nombre);
         intent.putExtra("apeUno", apeUno);
@@ -67,7 +68,6 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
         intent.putExtra("et_city", ciudad);
         intent.putExtra("et_cp", cpostal);
         startActivity(intent);
-
     }
 
     @Override
