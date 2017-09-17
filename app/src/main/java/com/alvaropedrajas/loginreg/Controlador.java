@@ -12,8 +12,8 @@ import java.util.Objects;
 
 public class Controlador implements View.OnClickListener{
 
-    final String usuario = "1";
-    final String password = "1";
+    final String usuario = "usuario";
+    final String password = "prueba";
     EditText etUser, etPass;
     boolean loginFlag;
     String getUsuario, getPassword;
