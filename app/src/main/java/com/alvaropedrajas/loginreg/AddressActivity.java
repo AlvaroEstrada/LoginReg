@@ -76,9 +76,7 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
             getDatos();
             enviarDatos(intent);
         }
-
         startActivity(intent);
-
     }
 
 
