@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.util.Objects;
+
 public class AddressActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText et_address, et_city, et_cp;
@@ -44,32 +46,42 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
         cpostal = et_cp.getText().toString();
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btnBack:
-                Intent intent = new Intent(this, UserdataActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-                startActivity(intent);
-                break;
+    private void enviarDatos(Intent intent) {
 
-            case R.id.btnNext:
-                getDatos();
-                enviarDatos();
-                break;
-        }
-    }
-
-    private void enviarDatos() {
-        Intent intent = new Intent(this, ResumeActivity.class);
         intent.putExtra("nombre", nombre);
         intent.putExtra("apeUno", apeUno);
         intent.putExtra("apeDos", apeDos);
         intent.putExtra("et_address", direcc);
         intent.putExtra("et_city", ciudad);
         intent.putExtra("et_cp", cpostal);
-        startActivity(intent);
     }
+
+    @Override
+    public void onClick(View v) {
+        Class c=null;
+        Intent intent=null;
+        switch (v.getId()){
+            case R.id.btnBack:
+                c=UserdataActivity.class;
+                break;
+
+            case R.id.btnNext:
+                c=ResumeActivity.class;
+
+                break;
+        }
+        intent=new Intent(this,c);
+
+        if(Objects.equals(c, ResumeActivity.class)  ){
+            getDatos();
+            enviarDatos(intent);
+        }
+
+        startActivity(intent);
+
+    }
+
+
 
     @Override
     protected void onStop() {

@@ -5,8 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity{
 
-    private Controlador controlador;
-    
+    private IControlador controlador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

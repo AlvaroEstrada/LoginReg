@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import java.util.Objects;
 
-public class Controlador implements View.OnClickListener{
+public class Controlador implements IControlador {
 
     final String usuario = "usuario";
     final String password = "prueba";
