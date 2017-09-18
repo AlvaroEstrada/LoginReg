@@ -54,6 +54,7 @@ public class Controlador implements View.OnClickListener{
 
         if (loginFlag) {
             Intent intent = new Intent(activity, UserdataActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
             activity.startActivityForResult(intent, 0);
         }
     }

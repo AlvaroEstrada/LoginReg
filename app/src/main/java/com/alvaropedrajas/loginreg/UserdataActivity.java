@@ -34,6 +34,7 @@ public class UserdataActivity extends AppCompatActivity implements View.OnClickL
 
     public void enviarDatos(){
         Intent intent = new Intent(this, AddressActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         intent.putExtra("et_name", nombre);
         intent.putExtra("et_last1", apeUno);
         intent.putExtra("et_last2", apeDos);

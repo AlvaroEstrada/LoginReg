@@ -49,6 +49,7 @@ public class AddressActivity extends AppCompatActivity implements View.OnClickLi
         switch (v.getId()){
             case R.id.btnBack:
                 Intent intent = new Intent(this, UserdataActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
                 break;
 
